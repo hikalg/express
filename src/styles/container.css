@@ -1,0 +1,30 @@
+@import "@fontsource/google-sans-flex";
+
+* {
+    font-family: 'Google Sans Flex', sans-serif, monospace;
+    
+}
+
+.main-container {
+    display: flex;
+    /* grid-template-rows: auto; */
+    justify-content: center;
+    margin-top: 5rem;
+}
+
+h1 {
+    font-size: 30px;
+}
+
+h2 {
+    font-size: 20px;
+}
+
+h3 {
+    font-size: 15px;
+    font-weight: bold;
+}
+
+p {
+    font-size: 15px;
+}

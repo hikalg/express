@@ -1,0 +1,15 @@
+/* @import "tailwindcss"; */
+
+@import "@fontsource/google-sans-flex";
+
+* {
+    font-family: 'Google Sans Flex', sans-serif, monospace;
+    font-size: 30px;
+}
+
+.main-container {
+    display: grid;
+    grid-template-rows: auto;
+    justify-content: center;
+    margin-top: 5rem;
+}

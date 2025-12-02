@@ -1,5 +1,7 @@
 ---
-
+import '../styles/global.css'
+import Title from '../components/Title.astro'
+import MainMenu from '../components/MainMenu.astro'
 ---
 
 <html lang="en">
@@ -11,6 +13,9 @@
 		<title>Astro</title>
 	</head>
 	<body>
-		<h1>Astro</h1>
+		<div class="main-container">
+			<Title />
+			<MainMenu/>
+		</div>
 	</body>
 </html>
