@@ -9,5 +9,6 @@ export default defineConfig({
     plugins: [tailwindcss()]
   },
   site: 'https://hikalg.github.io',
-  
+  base: '/express'
+
 });
