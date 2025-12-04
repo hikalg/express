@@ -8,7 +8,6 @@ export default defineConfig({
   vite: {
     plugins: [tailwindcss()]
   },
-  site: 'https://hikalg.github.io',
-  base: '/express'
+  site: 'https://hikamarine.au',
 
 });
