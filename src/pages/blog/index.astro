@@ -29,10 +29,10 @@ const chronologicalOrderPosts = allPosts.sort((a, b) => a.data.count - b.data.co
     <div class="sub-container">
         <h1>blog (like, for real)</h1>
         <p>where I yap about stuff.</p>
-        <ul>
+        <ul class="listing">
             {
             chronologicalOrderPosts.map((post) => (
-              <li>
+              <li class="listing">
                 <div class="listing"><span class="ticker">{post.data.count}</span><a href={`/blog/${post.data.shortid}`}>{post.data.title}</a></div>
               </li>
             ))
