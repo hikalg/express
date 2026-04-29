@@ -11,6 +11,7 @@ export async function GET(context) {
       title: post.data.title,
       link: `/blog/${post.data.shortid}/`,
       pubDate: post.data.date,
+      content: post.data.content
     })),
     author: `everest@hikamarine.au`,
     customData: `<language>en-au</language>`,

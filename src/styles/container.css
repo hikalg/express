@@ -67,8 +67,12 @@ p.quickinfo {
     padding: 0;
 }
 
+li {
+    line-height: 1rem;
+}
 
-ul {
+
+ul.navbar {
     list-style: none;
     margin: 0;
     padding: 0;
