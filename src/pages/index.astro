@@ -10,6 +10,12 @@ import MainMenu from '../components/MainMenu.astro'
 		<link rel="icon" type="image" href="/favicon.ico" />
 		<meta name="viewport" content="width=device-width" />
 		<meta name="generator" content={Astro.generator} />
+		<link
+            rel="alternate"
+            type="application/rss+xml"
+            title="Everest's Blog"
+            href={new URL("rss.xml", Astro.site)}
+            />
 		<title>Everest Luong</title>
 	</head>
 	<body>
