@@ -1,0 +1,28 @@
+---
+import { getCollection } from "astro:content";
+import "../../styles/container.css"
+import "../../styles/global.css"
+import BlogPost from "../../layouts/BlogPost.astro";
+import ReturnBar from "../../components/ReturnBar.astro";
+
+const allPosts = await getCollection("blog");
+// sort by count, reverse chronological order
+const chronologicalOrderPosts = allPosts.sort((a, b) => a.data.count - b.data.count).reverse();
+
+---
+<div class="main-container">
+    <ReturnBar returnWhere="/"/>
+    <div class="sub-container">
+        <h1>blog (like, for real)</h1>
+        <p>where I yap about stuff.</p>
+        <ul>
+            {
+            chronologicalOrderPosts.map((post) => (
+              <li>
+                <div class="listing"><span class="ticker">{post.data.count}</span><a href={`/blog/${post.data.shortid}`}>{post.data.title}</a></div>
+              </li>
+            ))
+            }
+        </ul>
+    </div>
+</div>

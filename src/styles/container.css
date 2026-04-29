@@ -47,8 +47,57 @@ p,
 a,
 b,
 li,
-i {
+i, em {
   font-size: 15px;
+  line-height: 0.75rem;
+}
+
+span.ticker, p.ticker {
+    color: gray;
+    width: 1rem;
+    margin-right: 10px;
+    padding-right: 10px;
+}
+
+p.quickinfo {
+    color: gray;
+    font-size: 13px;
+    line-height: 0.75rem;
+    margin: 0;
+    padding: 0;
+}
+
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+div.listing {
+    display: flex;
+    justify-content: flex-start;
+}
+
+li.navbar {
+    display: flex;
+    display: inline-block;
+    margin-right: 20px;
+}
+
+
+
+/*li {
+    /*line-height: 0.75rem;*/
+
+strong {
+    font-size: 15px;
+    font-weight: bolder;
+}
+
+sub {
+    line-height: 0.25rem;
+    font-size: 13.5px;
 }
 
 span, ul {

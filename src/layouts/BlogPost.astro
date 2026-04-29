@@ -1,0 +1,23 @@
+---
+import "../styles/global.css"
+import "../styles/container.css"
+import ReturnBar from "../components/ReturnBar.astro";
+const {frontmatter} = Astro.props;
+---
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Blog {frontmatter.number} - Everest's Blog</title>
+    </head>
+    <body>
+        <div class="main-container">
+            <ReturnBar returnWhere="/blog"/>
+            <div class="sub-container">
+                <h1>{frontmatter.title}</h1>
+                <p class="quickinfo">{frontmatter.count} |  {frontmatter.date.toLocaleDateString()} | {frontmatter.location} </p>
+                <p><slot /></p>
+            </div>
+        </div>
+    </body>
+</html>

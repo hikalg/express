@@ -1,0 +1,8 @@
+---
+import * as Test from '../pages/blog/test.md';
+const post = Object.values(import.meta.glob('./posts/*.md', { eager: true }));
+---
+
+<p>{Test.frontmatter.title}</p>
+
+{Test.rawContent()}
